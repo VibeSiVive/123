@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css"/> 
+    <link rel="stylesheet" href="bootstrap.min.css"/> 
+</head>
+
+<body>
+    <form id="student-form" onsubmit="addStudent(); return false;" class="container">
+        <div class="row">
+            <div class="col">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="Gender" class="form-label">Gender:</label>
+                <select id="gender" name="gender" class="form-select">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Queer</option>
+                    <option>Lesbian</option>
+                    <option>Bisexual</option>
+
+                </select>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <label class="form-label container" for="course">Course:</label>
+            <div class="col">
+                <div>
+                    <input type="radio" id="bs-cs" name="course" value="BS-CS" class="form-check-input"/> 
+                    <label for="bs-cs" class="form-label">BS CS</label>
+                </div>
+                <div>
+                    <input type="radio" id="bs-is" name="course" value="BS-IS" class="form-check-input"/>
+                    <label for="bs-is" class="form-label">BS IS</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div>
+                    <input type="radio" id="bs-it" name="course" value="BS-IT" class="form-check-input"/> 
+                    <label for="bs-it" class="form-label">BS IT</label>
+                </div>
+                <div>
+                    <input type="radio" id="bs-ds" name="course" value="BS-DS" class="form-check-input"/>
+                    <label for="bs-ds" class="form-label">BS DS</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+        <input type="submit" value="Add Student" class="btn btn-primary"/>
+
+    </form>
+
+    <table id="student-table" class="table container"> 
+        <thead> 
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody> </tbody>
+        <tfoot> </tfoot>
+    </table>
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.input-group {
+    display:flex;
+    flex-direction:column;
+}
+
+#student-form{
+    width: 250px
+} */
